@@ -1,6 +1,6 @@
 {
   "name": "fs.promises",
-  "description": "fs.promises polyfill",
+  "description": "fs/promises polyfill",
   "author": {
     "name": "Sergei Vizel",
     "email": "sergei.vizel@gmail.com",
@@ -13,7 +13,7 @@
     "polyfill"
   ],
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "engines": {
     "node": ">=8.9"

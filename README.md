@@ -1,6 +1,6 @@
 # fs.promises
 
-fs.promises polyfill
+fs/promises polyfill
 
 ## Install
 
@@ -12,8 +12,17 @@ $ npm install fs.promises
 
 ## Usage
 
+Enable with a CJS bridge:
+
+**index.js**
 ```js
 require('fs.promises');
+```
+
+or enable in the Node CLI with the [`-r` option](https://nodejs.org/api/cli.html#cli_r_require_module):
+
+```shell
+node -r fs.promises index.js
 ```
 
 ## License
