@@ -8,7 +8,7 @@ let fsPromises;
 try {
     fsPromises = require('fs/promises');
 } catch (e) {
-    fsPromises = promisify(fs);
+    fsPromises = fs.promises || promisify(fs);
     const originalRequire = Module.prototype.require;
     Module.prototype.require = function (id) {
         if ('fs/promises' == id) {
@@ -18,4 +18,8 @@ try {
     };
 }
 
-module.exports = fsPromises;
+if (!fs.promises) {
+    fs.promises = fsPromises;
+}
+
+module.exports = fs.promises;

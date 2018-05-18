@@ -1,6 +1,6 @@
 # fs.promises
 
-fs/promises polyfill
+fs.promises polyfill
 
 ## Install
 
